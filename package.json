@@ -14,5 +14,12 @@
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/darrett-johnson/ArenaAegis/issues"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
