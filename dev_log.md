@@ -15,3 +15,5 @@
 - OAuth2 URL Generator Bot Permission is set to `read messages`, `send messages`, and `embed links`
 - Created and configured slash Commands
 - Registered Slash Commands
+
+2/5/2024
