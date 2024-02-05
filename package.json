@@ -2,9 +2,12 @@
   "name": "arenaaegis",
   "version": "1.0.0",
   "description": "A discord battle bot",
-  "main": "app.js",
+  "main": "./App/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "start-dev": "nodemon .",
+    "update-commands": "node ./SlashCommands/index.js"
   },
   "repository": {
     "type": "git",
