@@ -17,4 +17,7 @@
 - Registered Slash Commands
 
 2/5/2024
-- 
+- Create client
+- Handle login
+- Handle event interactions
+- Handle `battle` slash command

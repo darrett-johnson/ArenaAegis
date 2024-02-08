@@ -1,6 +1,6 @@
 [ ] Bug Fix: Deleting the bot message crashes the bot
 [ ] Bug Fix: Kicking the bot during a battle crashes the bot
-[ ] Bug Fix: Register the bot commands when added to a new server
+[X] Bug Fix: Register the bot commands when added to a new server
 
 [X] Normalize the username to prevent underscore characters from being formatted by the markdown syntax
 [X] Change the battle title to prevent the user id from being displayed

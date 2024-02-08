@@ -1,20 +1,10 @@
-import { Client, GatewayIntentBits, Events } from 'discord.js'
-
-import * as dotenv from 'dotenv'
-dotenv.config()
+import { login } from './Client/client.login.js'
+import { listen } from './Client/client.listen.js'
 
 try {
-  const presence = { activities: [{ type: 5, name: 'battle!' }]}
-  const intents = []
-
-  const client = new Client({ presence: presence, intents: intents })
-
-  client.login(process.env.TOKEN)
-
-  client.once(Events.ClientReady, interaction => (
-    console.log(`Logged in as ${interaction.user.tag}`)
-  ))
+  login()
+  listen()
 }
 catch (err) {
-  console.log('Ran into the following error: ', err)
+  console.log("Unexpected error. Received the following error: ", err)
 }
