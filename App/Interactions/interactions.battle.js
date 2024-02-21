@@ -1,3 +1,4 @@
+import { initGame } from "../Game/game.js"
 export function battle(interaction){
   if (interaction.options.getUser('user').bot) {
     return interaction.reply({ content: `You cannot battle a bot!`, ephemeral: true })
@@ -9,5 +10,5 @@ export function battle(interaction){
     return interaction.reply({ content: `<@${interaction.options.getUser('user').id}> is not in this server!`, ephemeral: true })
   }
 
-  return interaction.reply({ content: `game start!`})
+  initGame(interaction)
 }

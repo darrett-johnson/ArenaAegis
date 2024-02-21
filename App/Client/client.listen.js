@@ -1,7 +1,7 @@
 /* Contains the logic for handling events sent to the client */
 import { Events } from 'discord.js'
 import { client } from './client.js'
-import { battle } from './Interactions/interactions.battle.js'
+import { battle } from '../Interactions/interactions.battle.js'
 
 export function listen() {
   try {
