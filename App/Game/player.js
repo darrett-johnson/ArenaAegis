@@ -1,12 +1,14 @@
 export class Player {
   
-  constructor({ id, username, health, shields }) {
+  static startingHealth = 100
+  static startingShields = 3
+
+  constructor({ id }) {
     this.id = id
-    this.username = username
-    this.health = health
-    this.shields = shields
-    this.damage_modifier = 1.0
-    this.damage_reduction_modifier = 1.0
+    this.health = Player.startingHealth
+    this.shields = Player.startingShields
+    this.damageModifier = 1.0
+    this.damageReductionModifier = 1.0
     this.status = []
   }
 
